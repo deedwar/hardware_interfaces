@@ -1,6 +1,9 @@
 cc_library_shared {
     name: "camera.device@1.0-impl",
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "qti_camera_device_defaults",
+    ],
     proprietary: true,
     srcs: [
         "CameraDevice.cpp",
